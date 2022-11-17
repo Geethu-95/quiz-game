@@ -1,29 +1,30 @@
-import { Box, Grid, IconButton, Typography } from "@mui/material";
+import { Box, Button, Grid, IconButton, Typography } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
-import q11 from '../Images/q11.png'
-import q12 from '../Images/q12.png'
-import q13 from '../Images/q13.png'
-import a11 from '../Images/a11.png'
-import a12 from '../Images/a12.png'
-import a13 from '../Images/a13.png'
-import a14 from '../Images/a14.png'
-import a17 from '../Images/a17.png'
-import a16 from '../Images/a16.png'
+import q51 from '../Images/q51.png'
+import q52 from '../Images/q52.png'
+import q53 from '../Images/q53.png'
+import a51 from '../Images/a51.png'
+import a52 from '../Images/a52.png'
+import a53 from '../Images/a53.png'
+import a54 from '../Images/a54.png'
+import a55 from '../Images/a55.png'
+import a56 from '../Images/a56.png'
 import question_box from '../Images/question_box.png'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import AnswerOption from "../Components/answerOption";
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { useNavigate } from "react-router-dom";
 
-export default function TestOne() {
+export default function TestFive() {
 
   let navigate = useNavigate();
 
   const routeChange= ()=> {
 
-    navigate('/testTwo')
+    navigate('/results')
   }
+
 
   return(
 
@@ -31,7 +32,7 @@ export default function TestOne() {
 
   <Grid item xs={12}  lg={4} align="left">
   <Typography variant="h5" style={{ color: 'white' }}>
-          <b>1/5</b>
+          <b>5/5</b>
         </Typography>
   </Grid>
 
@@ -51,7 +52,7 @@ export default function TestOne() {
 
     {/* <Card height="100px" width="100px">
       <CardContent> */}
-      <img src={q11} height="100px" width="100px">
+      <img src={q51} height="100px" width="100px">
       </img>
       {/* </CardContent>
       
@@ -61,12 +62,12 @@ export default function TestOne() {
 </Grid>
 
 <Grid item xs={12} lg={2}>
-<img src={q12} height="100px" width="100px">
+<img src={q52} height="100px" width="100px">
 </img>
 </Grid>
 
 <Grid item xs={12} lg={2}>
-<img src={q13} height="100px" width="100px">
+<img src={q53} height="100px" width="100px">
 </img>
 </Grid>
 
@@ -80,48 +81,49 @@ export default function TestOne() {
 <Grid conntainer xs={12} style={{marginTop:'20px', marginBottom:'20px'}}>
 
   <Typography variant="h5" color="white">
-  1. Which shape should be in the rightmost cell with a question mark?
+  5. Which shape should be in the rightmost cell with a question mark?
   </Typography>
 </Grid>
 <Grid container xs={12}>
 <Grid item xs={2}>
 <IconButton onClick={routeChange}>
-<img src={a11} height="100px" width="100px">
+<img src={a51} height="100px" width="100px">
 </img>
 </IconButton>
 </Grid>
 
 <Grid item xs={2}>
 <IconButton onClick={routeChange}>
-<img src={a12} height="100px" width="100px">
+<img src={a52} height="100px" width="100px">
+</img>
+</IconButton>
+</Grid>
+
+<Grid item xs={2}>
+
+<IconButton onClick={routeChange}>
+<img src={a53} height="100px" width="100px">
 </img>
 </IconButton>
 </Grid>
 
 <Grid item xs={2}>
 <IconButton onClick={routeChange}>
-<img src={a13} height="100px" width="100px">
+<img src={a54} height="100px" width="100px">
 </img>
 </IconButton>
 </Grid>
 
 <Grid item xs={2}>
 <IconButton onClick={routeChange}>
-<img src={a14} height="100px" width="100px">
+<img src={a55} height="100px" width="100px">
 </img>
 </IconButton>
 </Grid>
 
 <Grid item xs={2}>
 <IconButton onClick={routeChange}>
-<img src={a17} height="100px" width="100px">
-</img>
-</IconButton>
-</Grid>
-
-<Grid item xs={2}>
-<IconButton onClick={routeChange}>
-<img src={a16} height="100px" width="100px">
+<img src={a56} height="100px" width="100px">
 </img>
 </IconButton>
 </Grid>
@@ -129,6 +131,12 @@ export default function TestOne() {
 </Grid>
 
   </Grid>
+  <Grid container xs={12} lg={12}>
+    <IconButton style={{color:'grey'}} size="large">
+        <KeyboardBackspaceIcon/>
+    </IconButton>
+  </Grid>
+ 
 </Grid>
   );
 }

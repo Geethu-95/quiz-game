@@ -16,7 +16,10 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { Button, Grid } from '@mui/material';
 import image from '../Images/image.svg'
-import { useNavigate } from "react-router-dom";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -146,67 +149,61 @@ export function SearchAppBar() {
   );
 }
 
+export default function ResultPage() {
 
+    return(
 
-export default function StartTestPage(){
+        <>
 
-  let navigate = useNavigate();
+        <SearchAppBar/>
+        <Grid container xs={12} style={{marginLeft:'50px',marginTop:'20px'}} align="left">
+          <Grid item xs={12}>
+          <Typography variant="h6">
+            <b>Your result:</b>
+          </Typography>
+          </Grid>
+         
 
-  const routeChange= ()=> {
-    // setTimerOn(true);
-    navigate('/testOne')
-  }
+          <Grid item xs={12}>
+          <Typography variant="h6">
+            Test time: 00:03:44.
+          </Typography>
+          <br />
+          </Grid>
 
+          <Grid item xs={12}>
+          <Typography variant="h6">
+            Your IQ is 100.
+          </Typography>
+          <br /> <br />
+          </Grid>
 
-  // const [time, setTime] = React.useState(0);
-  // const [timerOn, setTimerOn] = React.useState(false);
+          <Grid item xs={12}>
+          <Typography variant="h6">
+            Share result:
+          </Typography>
+          
+          </Grid>
 
-  // useEffect(() => {
-  //   let interval = null;
+<Grid>
+  <IconButton>
+<WhatsAppIcon style={{color:'#90ee90'}}/>
+  </IconButton>
 
-  //   if (timerOn) {
-  //     interval = setInterval(() => {
-  //       setTime((prevTime) => prevTime + 1);
-  //     }, 1);
-  //   } else if (!timerOn) {
-  //     clearInterval(interval);
-  //   }
+  <IconButton>
+    <TelegramIcon style={{color:'#Add8e6'}}/>
+  </IconButton>
 
-  //   return () => clearInterval(interval);
-  // }, [timerOn]);
+  <IconButton>
+    <FacebookIcon style={{color:"#4267B2"}}/>
+  </IconButton>
 
-  return(
-<>
-<SearchAppBar/>
-<Grid container  xs={12} style={{backgroundColor:'#5D3FD3'}} width="100%" height={'100%'}>
-<Grid item xs={12} style={{marginTop:'15px',marginBottom:'25px'}}>
-    <img src={image} height='200px' width='200px'/>
+  <IconButton>
+    <TwitterIcon style={{color:'#1DA1F2'}}/>
+  </IconButton>
 </Grid>
+        </Grid>
+        </>
 
-<Grid item xs={12} style={{marginTop:'20px'}}>
-    <Typography variant ="h4" style={{color:'white'}}> IQ Test for kids from 7 to 16 year old </Typography>
-</Grid>
-
-
-<Grid item xs={12}  style={{marginTop:'25px',marginBottom:'40px'}}>
-    <Button size="large" style={{backgroundColor:'grey',color:'white'}} onClick={routeChange}>Start Test</Button>
-</Grid>
-
-<Grid item xs={12} style={{margin:'40px 40px 40px 40px'}}>
-<Typography variant="h6"style={{color:'white',textAlign:'justify'}}> Most IQ tests are not suitable for children, as they are originally developed for the adult population. However, if you want to know the IQ of a child between the ages of 7 and 16, there are several tests that can help you. There is an IQ test for children, developed by us, which, unlike similar ones, can also determine the IQ level of children at the age of 6 years.The child will be shown a series of three pictures arranged with some regularity. Children will need to choose pictures that are suitable for an empty cell. The first four questions should be answered together with the child so that he/she understands the essence of the task - these questions are not taken into account in the calculation of the child’s IQ. Let's get started!
-
-</Typography>
-</Grid>
-
-<Grid item xs={12} align="left" style={{margin:'40px 40px 40px 40px'}}>
-
-<Typography variant="h6" style={{color:'white',textAlign:'justify'}}> 
-  Author of the test:  Testometrika Team
-  </Typography>
-</Grid>
-</Grid>
-
-</>
-
-  );
+    )
 }
