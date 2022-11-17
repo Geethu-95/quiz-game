@@ -15,6 +15,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { useNavigate } from "react-router-dom";
+import AnswerOption from "../Components/answerOption";
 
 export default function TestThree() {
   let navigate = useNavigate();
@@ -85,45 +86,27 @@ export default function TestThree() {
 </Grid>
 <Grid container xs={12}>
 <Grid item xs={2}>
-<IconButton onClick={routeChange}>
-<img src={a31} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a31} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton  onClick={routeChange}>
-<img src={a32} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a32} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton  onClick={routeChange}>
-<img src={a33} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a33} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton  onClick={routeChange}>
-<img src={a34} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a34} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton  onClick={routeChange}>
-<img src={a36} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a36} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton  onClick={routeChange}>
-<img src={a35} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a35} route={routeChange}/>
 </Grid>
 
 </Grid>

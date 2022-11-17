@@ -5,7 +5,7 @@ export default function AnswerOption(props) {
 
     return(
 
-        <IconButton >
+        <IconButton onClick={props.route}>
             <img src={props.op} height="100px" width="100px"></img>
         </IconButton>
     )

@@ -85,45 +85,27 @@ export default function TestOne() {
 </Grid>
 <Grid container xs={12}>
 <Grid item xs={2}>
-<IconButton onClick={routeChange}>
-<img src={a11} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a11} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton onClick={routeChange}>
-<img src={a12} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a12} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton onClick={routeChange}>
-<img src={a13} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a13} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton onClick={routeChange}>
-<img src={a14} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a14} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton onClick={routeChange}>
-<img src={a17} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a17} route={routeChange}/>
 </Grid>
 
 <Grid item xs={2}>
-<IconButton onClick={routeChange}>
-<img src={a16} height="100px" width="100px">
-</img>
-</IconButton>
+<AnswerOption op={a16} route={routeChange}/>
 </Grid>
 
 </Grid>
