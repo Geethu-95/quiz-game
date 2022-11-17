@@ -20,6 +20,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { useNavigate } from "react-router-dom";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -149,7 +150,16 @@ export function SearchAppBar() {
   );
 }
 
+
+
+
 export default function ResultPage() {
+
+  const navigate = useNavigate()
+  window.onpopstate = () => {
+    navigate("/");
+  }
+ 
 
     return(
 
